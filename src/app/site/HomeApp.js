@@ -1,7 +1,6 @@
 import React, { Component} from 'react';
 import { withRouter } from 'react-router';
-import { SiteHeader, SiteFooter } from './components'
-import { Container } from 'semantic-ui-react';
+import { SiteHeader } from './components'
 
 export class HomeAppComponent extends Component{
     render(){
