@@ -18,7 +18,7 @@ export class News extends Component{
                 </Container>
                 <Container text style={{ marginTop: '2em'}}>
                     <GraphComponent />
-                </Container> 
+                </Container>
             </div>
         );
     }
