@@ -8,7 +8,7 @@ export class HomeAppComponent extends Component{
         return (
             <div>
                 <SiteHeader/>
-                <div style = {{width:'60%'}}>
+                <div style = {{width:'100%'}}>
                     { children }
                 </div>
                 {/* <SiteFooter/> */}

@@ -1,4 +1,3 @@
-'use strict';
 
 import axios from 'axios';
 
@@ -18,6 +17,8 @@ function handleServiceFailure() {
           console.log( message.messageText );
         case 500:
           console.log( message.messageText );
+        default:
+          console.log(message.messageText);
       }
     }
     throw err;
