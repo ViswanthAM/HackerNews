@@ -1,6 +1,8 @@
 import React,{ Component } from 'react'
 import { Table, Button } from 'semantic-ui-react'
 import { find } from 'lodash';
+import Moment from 'react-moment';
+
 
 export class TableComponentBuilder extends Component{
 
@@ -14,7 +16,10 @@ export class TableComponentBuilder extends Component{
         return (
             <div>
                 <h5>{item.title} <span  style={{fontWeight: 'lighter'}}>by </span> 
-                <span style={{fontWeight: 'normal'}}>{item.author}</span>    
+                <span>{item.author}</span> 
+                &nbsp;   
+                <Moment fromNow style={{fontWeight: 'normal'}}>{item.created_at}</Moment>
+                &nbsp;
                 <span onClick={()=>this.props.onNewsHide( item )} style={{fontWeight: 'lighter', textDecoration: 'underline', cursor:'pointer'}}>   [ hide ]</span></h5>
             </div>
         );
